@@ -2533,7 +2533,7 @@
 		background-color: transparent;
 		border: 0;
 		border-radius: 0;
-		box-shadow: inset 0 0 0 2px #00000;
+		box-shadow: inset 0 0 0 2px #ffffff;
 		color: #ffffff;
 		cursor: pointer;
 		display: inline-block;
@@ -2559,7 +2559,7 @@
 		.button:hover,
 		.button:active {
 			box-shadow: inset 0 0 0 2px #9bf1ff;
-			color: #00FF2C;
+			color: #9bf1ff;
 		}
 
 		input[type="submit"]:active,
@@ -2569,7 +2569,7 @@
 		.button:active {
 			background-color: rgba(155, 241, 255, 0.1);
 			box-shadow: inset 0 0 0 2px #53e3fb;
-			color: #00FF2C;
+			color: #53e3fb;
 		}
 
 		input[type="submit"].icon:before,
@@ -3490,7 +3490,7 @@
 			}
 
 				#banner > .inner .content > * {
-					margin-left: 0.0em;
+					margin-left: 0em;
 					margin-bottom: 0;
 				}
 
