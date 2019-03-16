@@ -1670,9 +1670,11 @@
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		border-bottom:hidden 2px;
 		color: inherit;
 		text-decoration: none;
+		color: #FF060A;
+		font-weight: 600
 	}
 
 		a:hover {
@@ -2531,7 +2533,7 @@
 		background-color: transparent;
 		border: 0;
 		border-radius: 0;
-		box-shadow: inset 0 0 0 2px #ffffff;
+		box-shadow: inset 0 0 0 2px #00000;
 		color: #ffffff;
 		cursor: pointer;
 		display: inline-block;
@@ -2557,7 +2559,7 @@
 		.button:hover,
 		.button:active {
 			box-shadow: inset 0 0 0 2px #9bf1ff;
-			color: #9bf1ff;
+			color: #00FF2C;
 		}
 
 		input[type="submit"]:active,
@@ -2567,7 +2569,7 @@
 		.button:active {
 			background-color: rgba(155, 241, 255, 0.1);
 			box-shadow: inset 0 0 0 2px #53e3fb;
-			color: #53e3fb;
+			color: #00FF2C;
 		}
 
 		input[type="submit"].icon:before,
@@ -3488,7 +3490,7 @@
 			}
 
 				#banner > .inner .content > * {
-					margin-left: 1.5em;
+					margin-left: 0.0em;
 					margin-bottom: 0;
 				}
 
