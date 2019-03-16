@@ -21,6 +21,7 @@
 
 	ol, ul {
 		list-style: none;
+		text-align: justify;
 	}
 
 	blockquote, q {
@@ -1697,6 +1698,7 @@
 
 	p {
 		margin: 0 0 2em 0;
+		text-align: justify;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -4069,4 +4071,9 @@
     width: 25%;
     /* Set a max-width to make sure your images stop scaling at some point */
     max-width: 200px;
+}
+.labeler {
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.20em;
 }
