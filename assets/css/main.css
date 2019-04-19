@@ -1714,27 +1714,27 @@
 		}
 
 	h1 {
-		font-size: 2.5em;
+		font-size: 2.0em;
 	}
 
 	h2 {
-		font-size: 1.75em;
+		font-size: 1.9em;
 	}
 
 	h3 {
-		font-size: 1.35em;
+		font-size: 1.25em;
 	}
 
 	h4 {
-		font-size: 1.1em;
-	}
-
-	h5 {
 		font-size: 0.9em;
 	}
 
+	h5 {
+		font-size: 0.75em;
+	}
+
 	h6 {
-		font-size: 0.7em;
+		font-size: 0.6em;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -1840,7 +1840,7 @@
 				background-color: #ffffff;
 				display: block;
 				height: 2px;
-				margin: 0.15em 0 0.25em 0;
+				margin: 0.325em 0 0.5em 0;
 				width: 100%;
 			}
 
@@ -2191,6 +2191,7 @@
 
 /* Image */
 
+	
 	.image {
 		border: 0;
 		display: inline-block;
@@ -2234,7 +2235,7 @@
 		.image.main {
 			display: block;
 			margin: 2.5em 0;
-			width: 100%;
+			width: 20%;
 		}
 
 			.image.main img {
@@ -2248,6 +2249,7 @@
 				}
 
 			}
+
 
 /* List */
 
@@ -3160,7 +3162,7 @@
 			font-size: 0.8em;
 			height: inherit;
 			line-height: inherit;
-			padding: 0.5em 0.5em 0.5em 0.5em;
+			padding: 0 1.5em;
 		
 		}
 
@@ -3174,7 +3176,7 @@
 				display: inline-block;
 				line-height: 1.65em;
 				margin-right: 0.325em;
-				padding: 0.125em 0.125em 0.125em 0.375em;
+				padding: 0 0.125em 0 0.375em;
 			}
 
 			#header .logo:hover strong {
@@ -3234,6 +3236,7 @@
 						top: 0;
 						vertical-align: middle;
 						width: 24px;
+						background-color: 
 					}
 
 					#header nav a[href="#menu"]:after {
@@ -3281,6 +3284,7 @@
 			background-color: transparent;
 			box-shadow: none;
 			position: absolute;
+			background-color: #35908F;
 		}
 
 			#header.alt.style1 .logo strong {
@@ -3520,11 +3524,11 @@
 			}
 
 		#banner.style1:after {
-			background-color: #6fc3df;
+			background-color: #0D5370;
 		}
 
 		#banner.style2:after {
-			background-color: #8d82c4;
+			background-color: #091D3D;
 		}
 
 		#banner.style3:after {
