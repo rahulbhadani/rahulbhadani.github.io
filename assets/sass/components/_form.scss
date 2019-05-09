@@ -1,5 +1,5 @@
 ///
-/// Forty by HTML5 UP
+/// Editorial by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -8,66 +8,14 @@
 
 	form {
 		margin: 0 0 _size(element-margin) 0;
-
-		.field {
-			margin: 0 0 (_size(element-margin) * 1) 0;
-
-			&.half {
-				width: 50%;
-				float: left;
-				padding: 0 0 0 (_size(element-margin) * 1 * 0.5);
-
-				&.first {
-					padding: 0 (_size(element-margin) * 1 * 0.5) 0 0;
-				}
-			}
-		}
-
-		> .actions {
-			margin: (_size(element-margin) * 1.25) 0 0 0 !important;
-		}
-
-		@include breakpoint(small) {
-			.field {
-				margin: 0 0 (_size(element-margin) * 0.75) 0;
-
-				&.half {
-					padding: 0 0 0 (_size(element-margin) * 0.75 * 0.5);
-
-					&.first {
-						padding: 0 (_size(element-margin) * 0.75 * 0.5) 0 0;
-					}
-				}
-			}
-
-			> .actions {
-				margin: (_size(element-margin) * 1) 0 0 0 !important;
-			}
-		}
-
-		@include breakpoint(xsmall) {
-			.field {
-				&.half {
-					width: 100%;
-					float: none;
-					padding: 0;
-
-					&.first {
-						padding: 0;
-					}
-				}
-			}
-		}
 	}
 
 	label {
 		color: _palette(fg-bold);
 		display: block;
-		font-size: 0.8em;
+		font-size: 0.9em;
 		font-weight: _font(weight-bold);
-		letter-spacing: _font(letter-spacing-alt);
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
-		text-transform: uppercase;
 	}
 
 	input[type="text"],
@@ -79,9 +27,10 @@
 	select,
 	textarea {
 		@include vendor('appearance', 'none');
-		background: _palette(border-bg);
+		background: _palette(bg);
+		border-radius: _size(border-radius);
 		border: none;
-		border-radius: 0;
+		border: solid 1px _palette(border);
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -94,31 +43,32 @@
 		}
 
 		&:focus {
-			border-color: _palette(highlight);
-			box-shadow: 0 0 0 2px _palette(highlight);
+			border-color: _palette(accent);
+			box-shadow: 0 0 0 1px _palette(accent);
 		}
 	}
 
-	.select-wrapper {
-		@include icon;
-		display: block;
-		position: relative;
+	select {
+		background-image: svg-url("<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'><path d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='#{_palette(border)}' /></svg>");
+		background-size: 1.25em;
+		background-repeat: no-repeat;
+		background-position: calc(100% - 1em) center;
+		height: _size(element-height);
+		padding-right: _size(element-height);
+		text-overflow: ellipsis;
 
-		&:before {
-			color: _palette(border);
-			content: '\f078';
-			display: block;
-			height: _size(element-height);
-			line-height: _size(element-height);
-			pointer-events: none;
-			position: absolute;
-			right: 0;
-			text-align: center;
-			top: 0;
-			width: _size(element-height);
+		option {
+			color: _palette(fg-bold);
+			background: _palette(bg);
 		}
 
-		select::-ms-expand {
+		&:focus {
+			&::-ms-value {
+				background-color: transparent;
+			}
+		}
+
+		&::-ms-expand {
 			display: none;
 		}
 	}
@@ -152,18 +102,20 @@
 			color: _palette(fg);
 			cursor: pointer;
 			display: inline-block;
+			font-size: 1em;
 			font-weight: _font(weight);
-			padding-left: (_size(element-height) * 0.6) + 1em;
+			padding-left: (_size(element-height) * 0.6) + 0.75em;
 			padding-right: 0.75em;
 			position: relative;
 
 			&:before {
-				background: _palette(border-bg);
+				background: _palette(bg);
+				border-radius: _size(border-radius);
+				border: solid 1px _palette(border);
 				content: '';
 				display: inline-block;
 				height: (_size(element-height) * 0.6);
 				left: 0;
-				letter-spacing: 0;
 				line-height: (_size(element-height) * 0.575);
 				position: absolute;
 				text-align: center;
@@ -175,15 +127,16 @@
 		&:checked + label {
 			&:before {
 				background: _palette(fg-bold);
-				border-color: _palette(highlight);
-				content: '\f00c';
+				border-color: _palette(fg-bold);
 				color: _palette(bg);
+				content: '\f00c';
 			}
 		}
 
 		&:focus + label {
 			&:before {
-				box-shadow: 0 0 0 2px _palette(highlight);
+				border-color: _palette(accent);
+				box-shadow: 0 0 0 1px _palette(accent);
 			}
 		}
 	}
@@ -191,6 +144,7 @@
 	input[type="checkbox"] {
 		& + label {
 			&:before {
+				border-radius: _size(border-radius);
 			}
 		}
 	}
@@ -219,11 +173,6 @@
 	}
 
 	:-ms-input-placeholder {
-		color: _palette(fg-light) !important;
-		opacity: 1.0;
-	}
-
-	.formerize-placeholder {
 		color: _palette(fg-light) !important;
 		opacity: 1.0;
 	}

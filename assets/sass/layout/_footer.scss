@@ -1,5 +1,5 @@
 ///
-/// Forty by HTML5 UP
+/// Editorial by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -8,35 +8,11 @@
 
 	#footer {
 		.copyright {
-			font-size: 0.8em;
-			list-style: none;
-			padding-left: 0;
+			color: _palette(fg-light);
+			font-size: 0.9em;
 
-			li {
-				border-left: solid 1px _palette(border);
-				color: _palette(fg-light);
-				display: inline-block;
-				line-height: 1;
-				margin-left: 1em;
-				padding-left: 1em;
-
-				&:first-child {
-					border-left: 0;
-					margin-left: 0;
-					padding-left: 0;
-				}
-			}
-		}
-
-		@include breakpoint(xsmall) {
-			.copyright {
-				li {
-					display: block;
-					border-left: 0;
-					margin-left: 0;
-					padding-left: 0;
-					line-height: inherit;
-				}
+			a {
+				color: inherit;
 			}
 		}
 	}
