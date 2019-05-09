@@ -2054,6 +2054,16 @@ input, select, textarea {
     float: right;
     margin: 10px;
 }
+    .newsimage
+{
+    border-radius: 0.375em;
+    border: 0;
+    position: relative;
+    display: inline-block;
+    max-width: 45%;
+    float: right;
+    margin: 10px;
+}
 
 	.image {
 		border-radius: 0.375em;
