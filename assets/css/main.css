@@ -21,6 +21,7 @@ section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+    text-align: justify;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
@@ -2043,6 +2044,17 @@ input, select, textarea {
 
 /* Image */
 
+    .bioimage
+{
+    border-radius: 0.375em;
+    border: 0;
+    position: relative;
+    display: inline-block;
+    max-width: 20%;
+    float: right;
+    margin: 10px;
+}
+
 	.image {
 		border-radius: 0.375em;
 		border: 0;
@@ -2055,9 +2067,8 @@ input, select, textarea {
         float:right;
         /*padding-bottom: 5em;*/
     }
-
 		.image img {
-			border-radius: 0.375em;
+			border-radius: 0.475em;
 			display: block;
 		}
 
