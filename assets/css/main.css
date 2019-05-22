@@ -3616,3 +3616,15 @@ input, select, textarea {
 			margin-top: 0;
 			padding-top: 0;
 		}
+
+#rsrc
+{
+    color: darkgreen;
+    font-weight: 600;
+    text-decoration:underline;
+}
+#rsrc a
+{
+    color: darkgreen;
+    text-decoration-color:darkred
+}
