@@ -3617,14 +3617,35 @@ input, select, textarea {
 			padding-top: 0;
 		}
 
+/*@font-face {
+font-family: "Harabara Bold";
+src: url("css/fonts/Harabara.eot");
+src: 
+url("css/fonts/Harabara.woff") format("woff"),
+url("css/fonts/Harabara.otf") format("opentype"),
+url("css/fonts/Harabara.svg#filename") format("svg");
+}
+
+h1 {
+font-family: 'Harabara Bold', Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+}
+*/
+
+
+
+
 #rsrc
 {
-    color: darkgreen;
-    font-weight: 600;
-    text-decoration:underline;
+    color:deeppink
+    font-weight: 800;
+    font-family:serif;
+    text-decoration:none;
+    
 }
 #rsrc a
 {
-    color: darkgreen;
-    text-decoration-color:darkred
+    color:darkslateblue;
+    font-weight: bold;
 }
