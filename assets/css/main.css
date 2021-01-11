@@ -21,7 +21,7 @@ section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-    text-align: justify;
+    hyphens: auto;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -183,13 +183,13 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		color: #ff2bae;
+		color: #59a7f0;
 		text-decoration: none;
-        text-shadow: -0.6px -0.6px 0px rgba(255, 43, 174,0.7), 1px 1px 0px rgba(0,0,0,0.8);
+        text-shadow: -0.6px -0.6px 0px rgba(79, 35, 173), 1px 1px 0px rgba(0,0,0,0.8);
 	}
 
 		a:hover {
-			border-bottom-color: #378DBD;
+			border-bottom-color: #4f23ad;
 			color: #fcf33a !important;
 		}
 
@@ -3070,7 +3070,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		margin: 0 0 1em -6em;
+		margin: 0 0 2em -2em;
 		width: calc(100%);
 	}
 
@@ -3374,7 +3374,7 @@ input, select, textarea {
 		-webkit-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
 		-ms-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
 		transition: margin-left 0.5s ease, box-shadow 0.5s ease;
-		background-color: #114f4b !important;; 
+		background-color: #333333 !important;; 
 		font-size: 0.9em;
 		position: relative;
 		width: 26em;
@@ -3557,7 +3557,8 @@ input, select, textarea {
 			}
 
 				#sidebar .toggle:before {
-					color: #18191a;
+					color: #eff23f;
+                    text-shadow: none;
 					margin-left: -0.0625em;
 					margin-top: -0.25em;
 					font-size: 1.1rem;
