@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <Title>{{ site.name }}: {{ page.title }}</title>
+        <meta name="viewport" content="width=device-width,
+				       initial-scale=1.0">
+	<link href="https://rahulbhadani.github.io/web2/" rel="canonical">
+        <base href="https://rahulbhadani.github.io/web2/">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/group.css" rel="stylesheet">
+        <link rel="alternate" type="application/atom+xml" title="Atom"
+              href="blog/blog.xml">
+        <link href="https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans:400,400i,700|Raleway:500,700"
+              rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+      <div class="header">
+        <div class="title clearfix">Rahul Bhadani</div>
+	<ul class="nav nav-pills nav-justified">
+          {% for item in site.navigation %}
+          {% assign shorturl = item.link | replace: '.html', '' %}
+          <li {% if page.url == shorturl %}class="active"{% endif %}>
+            <a href="{{ item.link }}">
+              {% if page.url == shorturl %}- {% endif %}{{ item.title
+              }}{% if page.url == shorturl %} -{% endif %}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+	    {% comment %}Liquid is sort of terrible! I think "!= true" is the
+            only way to do negation?{% endcomment %}
+            {% if page.notitle != true %}
+            <h2>{{ page.title }}</h2>
+	    {% else %}
+	    <h3></h3>
+            {% endif %}
+            {{ content }}
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="contact">
+              <div class="contact-title">
+                Contact</div>
+                <ul class="fa-ul">
+	          <li><i class="fa-li fa fa-envelope"></i>rahulbhadani@email.arizona.edu</li>
+	          <li><i class="fa-li fa fa-building"></i>Institute for Software and Integrated Systems</li>
+	          <li><i class="fa-li fa fa-location-arrow"></i>1025 16th Avenue S.
+                    <br class="hidden-xs"> Nashville, TN</li>
+	          <li><i class="fa-li fa
+	                        fa-github-alt"></i><a href="https://github.com/rahulbhadani/">rahulbhadani@github</a></li>
+                </ul>
+            </div>
+            <div class="contact hidden-xs">
+              <div class="contact-title">News</div>
+              <ul class="media-list">
+                {% for post in site.posts limit: site.front_page_news %}
+                <li class="media">
+                  {% if post.photo %}
+                  <div class="media-left news hidden-xs">
+                    {% if post.link %}
+                    <a href="{{ post.link }}">
+                      {% endif %}
+	              <img class="media-object img-thumbnail"
+                           src="{{ post.photo }}" >
+                      {% if post.link %} </a> {% endif %}
+                  </div>
+                  {% endif %}
+                  <div class="media-body">
+                    <h5 class="media-heading">
+                      {{ post.date | date_to_long_string }}
+                    </h5>
+                    {% if post.shortnews %}
+                    {{ post.content }}
+                    {% else %}
+                    <b>New Blog Post:</b>
+                        <a href="{{ post.url}}">{{ post.title }}</a>
+                    {% endif %}
+                  </div>
+                </li>
+                {% endfor %}
+              </ul>
+              <p><a href="news/">&nbsp;&nbsp;&nbsp;Older posts&hellip;</a></p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+          <a href="https://www.microsoft.com/en-us/research/group/systems-research-group-redmond/">Institute for Software and Integrated Systems</a> at 
+          <a href="https://www.microsoft.com/">Vanderbilt University</a>
+        </p>
+      </div>
+    </body>
+</html>

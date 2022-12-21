@@ -1,3 +1,34 @@
-theme: jekyll-theme-cayman
-title: welcome
-description: Just a description
+name: Rahul Bhadani
+url: rahulbhadani.github.io/web2
+exclude: [bibble, README.md, Makefile, job-search]
+
+# use this library to parse Markdown
+markdown: redcarpet
+redcarpet:
+    extensions: [smart, tables]
+
+# The path structure for blog posts.
+permalink: /blog/:year/:month/:day/:title.html
+
+# Number of news stories on the front page.
+front_page_news: 3
+
+# Navigation bar links.
+navigation:
+    - title: Home
+      link: /
+    - title: Research
+      link: research.html
+    - title: Publications
+      link: publications.html
+    - title: Service
+      link: service.html
+    - title: Blog
+      link: /blogs/
+    - title: Code
+      link: code.html
+
+plugins:
+    - jekyll-font-awesome
+    - font-awesome
+    - jekyll-font-awesome-sass
