@@ -8,11 +8,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Libre+Caslon', Georgia, Times, serif;
     font-weight:700;
-    color:#BB2649;  
+    color:#25080F;  
 }
 
 a {
-    color:#44D9B6;
+    color:#1b826a;
     font-weight:700;
 }
 
@@ -60,7 +60,7 @@ p, div {
 .header,
 .footer p {
     margin: 0.1em 0;
-    font-family: 'Mulish', Helvetica, Arial, sans-serif;
+    font-family: 'Libre+Caslon', Helvetica, Arial, sans-serif;
     font-weight:500;
     letter-spacing:1px;
     color: #67655D;
