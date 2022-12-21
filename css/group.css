@@ -33,7 +33,6 @@ p, div {
     text-transform: uppercase;
     letter-spacing:2px;
     padding-bottom: 20px;
-    background-color: gainsboro;
 }
 
 .subtitle {
@@ -49,7 +48,10 @@ p, div {
 }
 
 /* Custom page footer */
-.header,
+.header {
+    background-color: gainsboro;
+    text-align: center;
+}
 .footer {
     text-align: center;
 }
