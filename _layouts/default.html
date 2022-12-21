@@ -35,6 +35,16 @@
 
       <div class="container">
         <div class="row">
+          <div class="col-xs-12 col-sm-8">
+	    {% comment %}Liquid is sort of terrible! I think "!= true" is the
+            only way to do negation?{% endcomment %}
+            {% if page.notitle != true %}
+            <h2>{{ page.title }}</h2>
+	    {% else %}
+	    <h3></h3>
+            {% endif %}
+            {{ content }}
+          </div>
           <div class="col-sm-4 col-xs-12">
             <div class="contact">
               <div class="contact-title">
@@ -79,16 +89,6 @@
               </ul>
               <p><a href="news/">&nbsp;&nbsp;&nbsp;Older posts&hellip;</a></p>
             </div>
-            </div>
-            <div class="col-xs-12 col-sm-8">
-              {% comment %}Liquid is sort of terrible! I think "!= true" is the
-                    only way to do negation?{% endcomment %}
-                    {% if page.notitle != true %}
-                    <h2>{{ page.title }}</h2>
-              {% else %}
-              <h3></h3>
-                    {% endif %}
-                    {{ content }}
             </div>
           </div>
         </div>
