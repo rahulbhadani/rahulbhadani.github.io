@@ -3,7 +3,7 @@ body {
   /*padding-top: 20px;*/
   padding-bottom: 20px;
   /*background: url(/images/greyzz.png) repeat 0 0;*/
-  background-color: #e7e7f3;
+  background-color: gainsboro;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,7 +20,7 @@ a {
 p, div {
     font-family: 'Kanit', Helvetica, Arial, sans-serif;
     font-weight:400;
-    color:#67655D;
+    color:#28272A;
     font-size:16px;
 }
 
