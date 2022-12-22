@@ -4,6 +4,9 @@ body {
   padding-bottom: 20px;
   /*background: url(/images/greyzz.png) repeat 0 0;*/
   background-color: gainsboro;
+
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -117,6 +120,7 @@ p, div {
   letter-spacing:1px;
   text-transform: uppercase;
   background-color: #efeae2;
+  color: #28272A;
 }
 
 .nav-pills > li > a {
