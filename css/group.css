@@ -120,12 +120,11 @@ p, div {
   letter-spacing:1px;
   text-transform: uppercase;
   background-color: #efeae2;
-  color: #28272A;
 }
 
 .nav-pills > li > a {
   border-radius: 0px;
-  color:#67655D;
+  color: #28272A;
   font-family: 'Mulish', Helvetica, Arial, sans-serif;
   font-weight:500;
   font-size:1em;
@@ -134,7 +133,7 @@ p, div {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-    font-weight:500;
+    font-weight:800;
     background-color:transparent;
     color:#67655D;
 }
