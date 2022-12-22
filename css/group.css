@@ -2,7 +2,8 @@
 body {
   /*padding-top: 20px;*/
   padding-bottom: 20px;
-  background: url(/images/greyzz.png) repeat 0 0;
+  /*background: url(/images/greyzz.png) repeat 0 0;*/
+  background-color: #e7e7f3;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,7 +33,9 @@ p, div {
     text-align:center;
     text-transform: uppercase;
     letter-spacing:2px;
+    padding-top: 20px;
     padding-bottom: 20px;
+    background-color: gainsboro;
 }
 
 .subtitle {
@@ -49,7 +52,6 @@ p, div {
 
 /* Custom page footer */
 .header {
-    background-color: gainsboro;
     text-align: center;
 }
 .footer {
@@ -114,6 +116,7 @@ p, div {
   border-bottom: 1px solid #A8A8A1;
   letter-spacing:1px;
   text-transform: uppercase;
+  background-color: #efeae2;
 }
 
 .nav-pills > li > a {
