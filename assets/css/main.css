@@ -149,7 +149,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #2d3142;
 		font-family: "Montserrat", sans-serif;
-		font-size: 13pt;
+		font-size: 16pt;
 		font-weight: 400;
 		line-height: 1.65;
 	}
@@ -2092,7 +2092,7 @@ input, select, textarea {
     border: 0;
     position: relative;
     display: inline-block;
-    max-width: 40%;
+    max-width: 20%;
 	text-align: center;
 }
     .newsimage
