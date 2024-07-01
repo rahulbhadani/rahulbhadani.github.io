@@ -1,0 +1,61 @@
+/* Dark theme button styles */
+body.dark-theme .hiring-btn {
+    background-color: white;
+    color: darkred; /* Dark red text */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Adjust height as needed */
+    width: 200px; /* Adjust width as needed */
+    text-align: center;
+    margin-bottom: 10px; /* Add margin to create space below the button */
+}
+
+/* Light theme button styles */
+body.light-theme .hiring-btn {
+    background-color: rgb(186, 186, 186); /* Dark red background */
+    color: #ffa500; /* Light orange text */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Adjust height as needed */
+    width: 200px; /* Adjust width as needed */
+    text-align: center;
+    margin-bottom: 10px; /* Add margin to create space below the button */
+}
+
+/* Hover effect for both themes */
+.hiring-btn:hover {
+    opacity: 0.8;
+}
+
+/* Dark theme link styles */
+body.dark-theme .hiring-link {
+    color: rgb(243, 1, 1); /* Dark red link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Light theme link styles */
+body.light-theme .hiring-link {
+    color: #0037ff; /* Light orange link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover effect for links */
+.hiring-link:hover {
+    text-decoration: underline;
+}
