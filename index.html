@@ -5,8 +5,14 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 	</head>
-	<body class="is-preload">
+	<body class="is-preload light-theme">
+		<button id="theme-toggle" aria-label="Toggle Theme">
+			<i class="fas fa-sun" style="display:inline;"></i>
+			<i class="fas fa-moon" style="display:none;"></i>
+		</button>
 		<!-- Wrapper -->
 			<div id="wrapper">
 				<!-- Main -->
@@ -19,8 +25,8 @@
 												<img src="images/rahulbhadani.jpg" class="bioimage" alt="" >
 												<h1 style="text-align: center">Rahul Bhadani</h1>
 												<i class="fa fa-envelope-o"> </i><a href="#">&nbsp; rahulbhadani@email.arizona.edu</a><br/>
-												Assistant Professor, Electrical and Computer Engineering, The University of Alabama in Huntsville<br/>
-												Connected and Autonomous Vehicles | Mobility | Quantum Information Theory
+												<span class="professor-title">Assistant Professor, Electrical and Computer Engineering, The University of Alabama in Huntsville</span><br/>
+												<span class="research-interests">Connected and Autonomous Vehicles | Mobility | Quantum Information Theory</span>
 												<br/>
 												<!--img src="images/2x/Artboard 1@2x.png" class="logoimg"/>
 												<br/-->
@@ -100,6 +106,18 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				 document.getElementById('theme-toggle').addEventListener('click', function() {
+        document.body.classList.toggle('dark-theme');
+        document.body.classList.toggle('light-theme');
+        if (document.body.classList.contains('light-theme')) {
+            document.querySelector('.fa-sun').style.display = 'inline';
+            document.querySelector('.fa-moon').style.display = 'none';
+        } else {
+            document.querySelector('.fa-sun').style.display = 'none';
+            document.querySelector('.fa-moon').style.display = 'inline';
+        }
+    });
+			</script>
 	</body>
 </html>

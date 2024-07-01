@@ -29,11 +29,975 @@ section, summary, time, mark, audio, video {
 		
 }
 
-body{
-	
+
+/* Common styles */
+body {
+    hyphens: auto;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 	background-color: #1f2933;
 	color: #e0d6cc
 }
+
+/* Dark theme */
+body.dark-theme {
+    background-color: #1f2933;
+    color: #e0d6cc;
+}
+
+body.dark-theme table {
+    background-color: #1f2933;
+    color: #e0d6cc;
+}
+
+body.dark-theme p {
+    color: #e0d6cc;
+}
+
+body.dark-theme strong, 
+body.dark-theme b {
+    color: #e0d6cc;
+}
+
+body.dark-theme em, 
+body.dark-theme i {
+    color: #e0d6cc;
+}
+
+body.dark-theme h1, 
+body.dark-theme h2, 
+body.dark-theme h3, 
+body.dark-theme h4, 
+body.dark-theme h5, 
+body.dark-theme h6 {
+    color: #d7e0cc;
+}
+
+body.dark-theme a {
+    color: #59a7f0;
+}
+
+body.dark-theme a:hover {
+    color: #fcf33a !important;
+}
+
+body.dark-theme blockquote {
+    border-left: solid 3px rgba(210, 215, 217, 0.75);
+}
+
+body.dark-theme code {
+    background: rgba(230, 235, 237, 0.25);
+    border: solid 1px rgba(210, 215, 217, 0.75);
+}
+
+body.dark-theme hr {
+    border-bottom: solid 1px rgba(210, 215, 217, 0.75);
+}
+
+body.dark-theme ul.alt li {
+    border-top: solid 1px rgba(210, 215, 217, 0.75);
+}
+
+body.dark-theme .box {
+    border: solid 1px rgba(210, 215, 217, 0.75);
+}
+
+/* Dark theme for general text */
+body.dark-theme .content {
+    color: #e0d6cc;
+}
+
+/* Light theme for general text */
+body.light-theme .content {
+    color: #1f2933;
+}
+
+/* Dark theme for the wrapper */
+body.dark-theme #wrapper {
+    background-color: #1f2933;
+    color: #e0d6cc;
+}
+
+/* Light theme for the wrapper */
+body.light-theme #wrapper {
+    background-color: #e0d6cc;
+    color: #1f2933;
+}
+
+/* Dark theme for the main div */
+body.dark-theme main {
+    color: #e0d6cc;
+}
+
+/* Light theme for the main div */
+body.light-theme main {
+    color: #1f2933;
+}
+/* Dark theme for the inner class */
+body.dark-theme .inner {
+    color: #e0d6cc;
+}
+
+/* Light theme for the inner class */
+body.light-theme .inner {
+    color: #1f2933;
+}
+/* Dark theme for ordered list and list items */
+body.dark-theme ol,
+body.dark-theme li {
+    color: #e0d6cc;
+}
+
+/* Light theme for ordered list and list items */
+body.light-theme ol,
+body.light-theme li {
+    color: #1f2933;
+}
+/* Dark theme for table borders */
+body.dark-theme table {
+    border-color: #e0d6cc;
+}
+
+/* Light theme for table borders */
+body.light-theme table {
+    border-color: #1f2933;
+}
+
+/* Dark theme for table cells */
+body.dark-theme th,
+body.dark-theme td {
+    border-color: #e0d6cc;
+}
+
+/* Light theme for table cells */
+body.light-theme th,
+body.light-theme td {
+    border-color: #1f2933;
+}
+/* Dark theme for table rows and table data */
+body.dark-theme .wrap-table100 td {
+    color: #e0d6cc;
+}
+
+/* Light theme for table rows and table data */
+body.light-theme .wrap-table100 td {
+    color: #1f2933;
+}
+
+/* Dark theme for table borders */
+body.dark-theme .wrap-table100 table {
+    border-color: #e0d6cc;
+}
+
+/* Light theme for table borders */
+body.light-theme .wrap-table100 table {
+    border-color: #1f2933;
+}
+
+/* Dark theme for table cells */
+body.dark-theme .wrap-table100 th,
+body.dark-theme .wrap-table100 td {
+    border-color: #e0d6cc;
+}
+
+/* Light theme for table cells */
+body.light-theme .wrap-table100 th,
+body.light-theme .wrap-table100 td {
+    border-color: #1f2933;
+}
+
+
+body.dark-theme input[type="text"],
+body.dark-theme input[type="password"],
+body.dark-theme input[type="email"],
+body.dark-theme input[type="tel"],
+body.dark-theme input[type="search"],
+body.dark-theme input[type="url"],
+body.dark-theme select,
+body.dark-theme textarea {
+    background: #ffffff;
+    border: solid 1px rgba(210, 215, 217, 0.75);
+}
+
+body.dark-theme input[type="checkbox"] + label:before,
+body.dark-theme input[type="radio"] + label:before {
+    background: #ffffff;
+    border: solid 1px rgba(210, 215, 217, 0.75);
+}
+
+body.dark-theme input[type="checkbox"]:checked + label:before,
+body.dark-theme input[type="radio"]:checked + label:before {
+    background: #3d4449;
+    border-color: #3d4449;
+    color: #ffffff;
+}
+
+body.dark-theme label {
+    color: #3d4449;
+}
+
+body.dark-theme select option {
+    color: #3d4449;
+    background: #ffffff;
+}
+
+body.dark-theme table th {
+    color: #3d4449;
+}
+
+body.dark-theme table thead, 
+body.dark-theme table tfoot {
+    border-bottom: solid 2px rgba(210, 215, 217, 0.75);
+}
+
+body.dark-theme button, 
+body.dark-theme .button {
+    box-shadow: inset 0 0 0 2px #378DBD;
+    color: #378DBD !important;
+}
+
+body.dark-theme button.primary, 
+body.dark-theme .button.primary {
+    background-color: #378DBD;
+    color: #ffffff !important;
+}
+
+/* Light theme */
+body.light-theme {
+    background-color: #e0d6cc;
+    color: #1f2933;
+}
+
+body.light-theme table {
+    background-color: #e0d6cc;
+    color: #1f2933;
+}
+
+body.light-theme p {
+    color: #1f2933;
+}
+
+body.light-theme strong, 
+body.light-theme b {
+    color: #1f2933;
+}
+
+body.light-theme em, 
+body.light-theme i {
+    color: #1f2933;
+}
+
+body.light-theme h1, 
+body.light-theme h2, 
+body.light-theme h3, 
+body.light-theme h4, 
+body.light-theme h5, 
+body.light-theme h6 {
+    color: #1f2933;
+}
+
+body.light-theme a {
+    color: #378DBD;
+}
+
+body.light-theme a:hover {
+    color: #4f23ad !important;
+}
+
+body.light-theme blockquote {
+    border-left: solid 3px rgba(45, 49, 66, 0.75);
+}
+
+body.light-theme code {
+    background: rgba(25, 29, 41, 0.25);
+    border: solid 1px rgba(45, 49, 66, 0.75);
+}
+
+body.light-theme hr {
+    border-bottom: solid 1px rgba(45, 49, 66, 0.75);
+}
+
+body.light-theme ul.alt li {
+    border-top: solid 1px rgba(45, 49, 66, 0.75);
+}
+
+body.light-theme .box {
+    border: solid 1px rgba(45, 49, 66, 0.75);
+}
+
+body.light-theme input[type="text"],
+body.light-theme input[type="password"],
+body.light-theme input[type="email"],
+body.light-theme input[type="tel"],
+body.light-theme input[type="search"],
+body.light-theme input[type="url"],
+body.light-theme select,
+body.light-theme textarea {
+    background: #1f2933;
+    border: solid 1px rgba(45, 49, 66, 0.75);
+}
+
+body.light-theme input[type="checkbox"] + label:before,
+body.light-theme input[type="radio"] + label:before {
+    background: #1f2933;
+    border: solid 1px rgba(45, 49, 66, 0.75);
+}
+
+body.light-theme input[type="checkbox"]:checked + label:before,
+body.light-theme input[type="radio"]:checked + label:before {
+    background: #e0d6cc;
+    border-color: #e0d6cc;
+    color: #1f2933;
+}
+
+body.light-theme label {
+    color: #e0d6cc;
+}
+
+body.light-theme select option {
+    color: #e0d6cc;
+    background: #1f2933;
+}
+
+body.light-theme table th {
+    color: #e0d6cc;
+}
+
+body.light-theme table thead, 
+body.light-theme table tfoot {
+    border-bottom: solid 2px rgba(45, 49, 66, 0.75);
+}
+
+body.light-theme button, 
+body.light-theme .button {
+    box-shadow: inset 0 0 0 2px #4f23ad;
+    color: #4f23ad !important;
+}
+
+body.light-theme button.primary, 
+body.light-theme .button.primary {
+    background-color: #4f23ad;
+    color: #e0d6cc !important;
+}
+
+/* Dark theme */
+body.dark-theme .icon-person:before {
+    content: "About";
+    color: #c0dfe8;
+    font-size: 24px;
+    margin-bottom: 24px;
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    padding: 2%;
+    padding-bottom: 1.5%;
+}
+
+body.dark-theme .icon-teaching:before {
+    content: "Teaching";
+    color: #e4c0e8;
+    font-size: 24px;
+    margin-bottom: 24px;
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    padding: 2%;
+    padding-bottom: 1.5%;
+}
+
+body.dark-theme .icon-research:before {
+    content: "Research";
+    color: #e8c0c0;
+    font-size: 24px;
+    margin-bottom: 24px;
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    padding: 2%;
+    padding-bottom: 1.5%;
+}
+
+body.dark-theme .icon-publication:before {
+    content: "Publications";
+    color: #cde8c0;
+    font-size: 24px;
+    margin-bottom: 24px;
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    padding: 2%;
+    padding-bottom: 1.5%;
+}
+
+body.dark-theme .icon-news:before {
+    content: "News";
+    color: #bcddeb;
+    font-size: 24px;
+    margin-bottom: 24px;
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    padding: 2%;
+    padding-bottom: 1.5%;
+}
+
+body.dark-theme .icon-resources:before {
+    content: "Resources";
+    color: #e8ebbc;
+    font-size: 24px;
+    margin-bottom: 24px;
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    padding: 2%;
+    padding-bottom: 1.5%;
+}
+
+body.dark-theme .icon-blogs:before {
+    content: "Blogs";
+    color: #e8ebbc;
+    font-size: 24px;
+    margin-bottom: 24px;
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    padding: 2%;
+    padding-bottom: 1.5%;
+}
+
+/* Light theme */
+body.light-theme .icon-person:before {
+    content: "About";
+    color: #072a4c;
+    font-size: 24px;
+    margin-bottom: 24px;
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    padding: 2%;
+    padding-bottom: 1.5%;
+}
+
+body.light-theme .icon-teaching:before {
+    content: "Teaching";
+    color: #490e9b;
+    font-size: 24px;
+    margin-bottom: 24px;
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    padding: 2%;
+    padding-bottom: 1.5%;
+}
+
+body.light-theme .icon-research:before {
+    content: "Research";
+    color: #8e3900;
+    font-size: 24px;
+    margin-bottom: 24px;
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    padding: 2%;
+    padding-bottom: 1.5%;
+}
+
+body.light-theme .icon-publication:before {
+    content: "Publications";
+    color: #9e0000;
+    font-size: 24px;
+    margin-bottom: 24px;
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    padding: 2%;
+    padding-bottom: 1.5%;
+}
+
+body.light-theme .icon-news:before {
+    content: "News";
+    color: #005a6e;
+    font-size: 24px;
+    margin-bottom: 24px;
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    padding: 2%;
+    padding-bottom: 1.5%;
+}
+
+body.light-theme .icon-resources:before {
+    content: "Resources";
+    color: #0342bf;
+    font-size: 24px;
+    margin-bottom: 24px;
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    padding: 2%;
+    padding-bottom: 1.5%;
+}
+
+body.light-theme .icon-blogs:before {
+    content: "Blogs";
+    color: #016d23;
+    font-size: 24px;
+    margin-bottom: 24px;
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    padding: 2%;
+    padding-bottom: 1.5%;
+}
+
+
+/* Dark theme */
+body.dark-theme ul.contact {
+    list-style: none;
+    padding: 0;
+}
+
+body.dark-theme ul.contact li {
+    text-decoration: none;
+    border-top: solid 1px rgba(210, 215, 217, 0.75);
+    margin: 1.5em 0 0 0;
+    padding: 1.5em 0 0 3em;
+    position: relative;
+}
+
+body.dark-theme ul.contact li:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+body.dark-theme ul.contact li:before {
+    color: #378DBD;
+    display: inline-block;
+    font-size: 1.5em;
+    height: 1.125em;
+    left: 0;
+    line-height: 1.125em;
+    position: absolute;
+    text-align: center;
+    top: 1em;
+    width: 1.5em;
+}
+
+body.dark-theme ul.contact li:first-child {
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body.dark-theme ul.contact li:first-child:before {
+    top: 0;
+}
+
+body.dark-theme ul.contact li a {
+    color: inherit;
+}
+
+/* Light theme */
+body.light-theme ul.contact {
+    list-style: none;
+    padding: 0;
+}
+
+body.light-theme ul.contact li {
+    text-decoration: none;
+    border-top: solid 1px rgba(45, 49, 66, 0.75);
+    margin: 1.5em 0 0 0;
+    padding: 1.5em 0 0 3em;
+    position: relative;
+}
+
+body.light-theme ul.contact li:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+body.light-theme ul.contact li:before {
+    color: #00157e;
+    display: inline-block;
+    font-size: 1.5em;
+    height: 1.125em;
+    left: 0;
+    line-height: 1.125em;
+    position: absolute;
+    text-align: center;
+    top: 1em;
+    width: 1.5em;
+}
+
+body.light-theme ul.contact li:first-child {
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body.light-theme ul.contact li:first-child:before {
+    top: 0;
+}
+
+body.light-theme ul.contact li a {
+    color: inherit;
+}
+
+
+/* Dark theme */
+body.dark-theme .professor-title {
+    color: #e0d6cc;
+}
+
+body.dark-theme .research-interests {
+    color: #e0d6cc;
+}
+
+/* Light theme */
+body.light-theme .professor-title {
+    color: #1f2933;
+}
+
+body.light-theme .research-interests {
+    color: #1f2933;
+}
+
+/* Dark Theme */
+body.dark-theme #sidebar {
+    background-color: #333333 !important;
+}
+
+body.dark-theme #sidebar.inactive {
+    background-color: #114f4b;
+}
+
+/* Light Theme */
+body.light-theme #sidebar {
+    background-color: #e0d6cc !important;
+}
+
+body.light-theme #sidebar.inactive {
+    background-color: #d3e0e9;
+}
+
+body.dark-theme #sidebar {
+    background-color: #333333 !important;
+    color: #e0d6cc;
+}
+
+body.dark-theme #sidebar.inactive {
+    background-color: #114f4b;
+    color: #e0d6cc;
+}
+
+body.dark-theme #sidebar h2,
+body.dark-theme #sidebar p,
+body.dark-theme #sidebar ul,
+body.dark-theme #sidebar a {
+    color: #e0d6cc;
+}
+
+body.dark-theme #sidebar a {
+    color: #59a7f0;
+}
+
+body.dark-theme #sidebar a:hover {
+    color: #3afcb2 !important;
+}
+
+body.light-theme #sidebar {
+    background-color: #dff3fa !important;
+    color: #1f2933;
+}
+
+body.light-theme #sidebar.inactive {
+    background-color: #d3e0e9;
+    color: #1f2933;
+}
+
+body.light-theme #sidebar h2,
+body.light-theme #sidebar p,
+body.light-theme #sidebar ul,
+body.light-theme #sidebar a {
+    color: #1f2933;
+}
+
+body.light-theme #sidebar a {
+    color: #378DBD;
+}
+
+body.light-theme #sidebar a:hover {
+    color: #4f23ad !important;
+}
+
+/* Dark theme for contact section */
+body.dark-theme ul.contact {
+    list-style: none;
+    padding: 0;
+}
+
+body.dark-theme ul.contact li {
+    text-decoration: none;
+    border-top: solid 1px rgba(210, 215, 217, 0.75);
+    margin: 1.5em 0 0 0;
+    padding: 1.5em 0 0 3em;
+    position: relative;
+    color: #e0d6cc;
+}
+
+body.dark-theme ul.contact li:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+    color: #378DBD;
+    display: inline-block;
+    font-size: 1.5em;
+    height: 1.125em;
+    left: 0;
+    line-height: 1.125em;
+    position: absolute;
+    text-align: center;
+    top: 1em;
+    width: 1.5em;
+}
+
+body.dark-theme ul.contact li:first-child {
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body.dark-theme ul.contact li:first-child:before {
+    top: 0;
+}
+
+body.dark-theme ul.contact li a {
+    color: inherit;
+}
+
+/* Light theme for contact section */
+body.light-theme ul.contact {
+    list-style: none;
+    padding: 0;
+}
+
+body.light-theme ul.contact li {
+    text-decoration: none;
+    border-top: solid 1px rgba(45, 49, 66, 0.75);
+    margin: 1.5em 0 0 0;
+    padding: 1.5em 0 0 3em;
+    position: relative;
+    color: #1f2933;
+}
+
+body.light-theme ul.contact li:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+    color: #378DBD;
+    display: inline-block;
+    font-size: 1.5em;
+    height: 1.125em;
+    left: 0;
+    line-height: 1.125em;
+    position: absolute;
+    text-align: center;
+    top: 1em;
+    width: 1.5em;
+}
+
+body.light-theme ul.contact li:first-child {
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body.light-theme ul.contact li:first-child:before {
+    top: 0;
+}
+
+body.light-theme ul.contact li a {
+    color: inherit;
+}
+/* Dark theme for section divider line */
+body.dark-theme #main > .inner > section {
+    border-top: solid 2px rgba(210, 215, 217, 0.75);
+}
+
+/* Light theme for section divider line */
+body.light-theme #main > .inner > section {
+    border-top: solid 2px #000000; /* Black color for section divider line */
+}
+
+/* Dark theme for .labeler */
+body.dark-theme .labeler {
+    color: burlywood;
+}
+
+/* Light theme for .labeler */
+body.light-theme .labeler {
+    color: #005825; /* A darker shade of burlywood for better contrast in light theme */
+}
+
+/* Dark theme for .custom section */
+body.dark-theme section.custom {
+    background-color: #1f2933;
+    color: #e0d6cc;
+}
+
+body.dark-theme section.custom .inner {
+    color: #e0d6cc;
+}
+
+body.dark-theme section.custom h3 {
+    color: #e0d6cc;
+}
+
+body.dark-theme section.custom ul li {
+    color: #e0d6cc;
+}
+
+/* Light theme for .custom section */
+body.light-theme section.custom {
+    background-color: #e0d6cc;
+    color: #1f2933;
+}
+
+body.light-theme section.custom .inner {
+    color: #1f2933;
+}
+
+body.light-theme section.custom h3 {
+    color: #1f2933;
+}
+
+body.light-theme section.custom ul li {
+    color: #1f2933;
+}
+
+#theme-toggle {
+    background-color: transparent;
+    border: none; /* Remove borders */
+    box-shadow: none; /* Remove any shadow */
+    cursor: pointer;
+    outline: none; /* Remove the outline on focus */
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    padding: 0;
+}
+
+#theme-toggle:focus {
+    outline: none; /* Ensure focus does not show an outline */
+}
+
+#theme-toggle:active,
+#theme-toggle:hover {
+    border: none; /* Ensure no border on active or hover state */
+    outline: none;
+    box-shadow: none;
+}
+
+.fa-sun {
+    color: #ff6200 !important;
+}
+
+.fa-moon {
+    color: #4f4f4f;
+}
+
+
 
 
 nav{
@@ -185,7 +1149,7 @@ input, select, textarea {
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		color: #59a7f0;
 		text-decoration: none;
-        text-shadow: -0.6px -0.6px 0px rgba(79, 35, 173), 1px 1px 0px rgba(0,0,0,0.8);
+        /*text-shadow: -0.6px -0.6px 0px rgba(79, 35, 173), 1px 1px 0px rgba(0,0,0,0.8);*/
 	}
 
 		a:hover {
@@ -3869,7 +4833,7 @@ input, select, textarea {
 				}
 
 	#menu > ul > li {
-		border-top: solid 1px rgba(210, 215, 217, 0.75);
+		border-top: solid 1px rgba(16, 32, 39, 0.75);
 		margin: 0.5em 0 0 0;
 		padding: 0.5em 0 0 0;
 	}

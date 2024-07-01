@@ -10,9 +10,14 @@
 		<link rel="stylesheet" href="assets/css/jssor.css" />
         <script src="assets/js/expand.js"></script>
         <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 	</head>
-	<body>
+	<body class="is-preload">
+		<button id="theme-toggle" aria-label="Toggle Theme">
+			<i class="fas fa-sun" style="display:none;"></i>
+			<i class="fas fa-moon" style="display:inline;"></i>
+		</button>
 <!-- Wrapper -->
 			<div id="wrapper">
 
@@ -154,6 +159,18 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-
+			<script>
+				document.getElementById('theme-toggle').addEventListener('click', function() {
+	   document.body.classList.toggle('dark-theme');
+	   document.body.classList.toggle('light-theme');
+	   if (document.body.classList.contains('light-theme')) {
+		   document.querySelector('.fa-sun').style.display = 'inline';
+		   document.querySelector('.fa-moon').style.display = 'none';
+	   } else {
+		   document.querySelector('.fa-sun').style.display = 'none';
+		   document.querySelector('.fa-moon').style.display = 'inline';
+	   }
+   });
+		   </script>
 	</body>
 </html>
