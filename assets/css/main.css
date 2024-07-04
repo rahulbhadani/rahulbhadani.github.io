@@ -1290,6 +1290,7 @@ input, select, textarea {
 			line-height: 1.75;
 			padding: 1em 1.5em;
 			overflow-x: auto;
+			color: #ffffff;
 		}
 
 	hr {
@@ -3536,7 +3537,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(214, 67, 9, 0.05);
+			background-color: rgba(218, 71, 13, 0.05);
 		}
 
 		input[type="submit"]:active,
@@ -3586,7 +3587,7 @@ input, select, textarea {
         input[type="button"].abstract,
         button.abstract,
         .button.abstract {
-        font-size: 0.62em;
+        font-size: 1.0em;
         height: 2.2em;
         line-height: 2.2em;
         border-radius: 8px;

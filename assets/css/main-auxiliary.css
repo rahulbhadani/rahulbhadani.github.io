@@ -66,3 +66,17 @@ body.light-theme .hiring-link {
     display: block;
     margin: 20px auto;
 }
+/* Additional button styling */
+.button.pdf {
+    font-size: 1.0em;
+        height: 2.2em;
+        line-height: 2.2em;
+        border-radius: 8px;
+        vertical-align: middle; 
+        background-color: rgb(232, 249, 231);
+        
+}
+
+.button.pdf:hover {
+    background-color: #f00404; /* Darker shade for hover effect */
+}
