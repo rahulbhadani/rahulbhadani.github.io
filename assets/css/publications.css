@@ -1,0 +1,522 @@
+/* Publications Page Enhancements */
+
+/* Publications Container */
+.publications-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Section Styling */
+.publications-section {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 2em;
+    margin-bottom: 2em;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+body.light-theme .publications-section {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headers */
+.publications-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0.5em;
+}
+
+.publications-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(135deg, #59a7f0, #378DBD);
+    border-radius: 2px;
+}
+
+body.light-theme .publications-section h2::after {
+    background: linear-gradient(135deg, #378DBD, #4f23ad);
+}
+
+/* Year Headers */
+.publications-section h3 {
+    font-size: 1.4em;
+    margin: 2em 0 1em 0;
+    color: #59a7f0;
+    font-weight: 600;
+    border-left: 4px solid #59a7f0;
+    padding-left: 1em;
+    background: rgba(89, 167, 240, 0.1);
+    padding: 0.5em 0 0.5em 1em;
+    border-radius: 0 8px 8px 0;
+}
+
+body.light-theme .publications-section h3 {
+    color: #378DBD;
+    border-left-color: #378DBD;
+    background: rgba(55, 141, 189, 0.1);
+}
+
+/* Publications List */
+.publications-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: publication-counter;
+}
+
+/* Individual Publication Item */
+.publication-item {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 1.5em 1.5em 1.5em 3.5em;
+    margin-bottom: 1.5em;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    counter-increment: publication-counter;
+}
+
+/* Publication Number */
+.publication-item::before {
+    content: counter(publication-counter);
+    position: absolute;
+    left: 1em;
+    top: 1.5em;
+    background: linear-gradient(135deg, #59a7f0, #378DBD);
+    color: white;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9em;
+    box-shadow: 0 3px 10px rgba(89, 167, 240, 0.3);
+}
+
+body.light-theme .publication-item::before {
+    background: linear-gradient(135deg, #378DBD, #4f23ad);
+}
+
+body.light-theme .publication-item {
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.publication-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+body.light-theme .publication-item:hover {
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Publication Content */
+.publication-content {
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+.publication-authors {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    color: #e0d6cc;
+}
+
+body.light-theme .publication-authors {
+    color: #2d3142;
+}
+
+.publication-title {
+    font-weight: 700;
+    color: #59a7f0;
+    margin: 0 0.3em;
+    text-decoration: underline;
+    text-decoration-color: rgba(89, 167, 240, 0.5);
+}
+
+body.light-theme .publication-title {
+    color: #378DBD;
+    text-decoration-color: rgba(55, 141, 189, 0.5);
+}
+
+.publication-venue {
+    font-style: italic;
+    color: #e4c0e8;
+    margin-left: 0.3em;
+}
+
+body.light-theme .publication-venue {
+    color: #490e9b;
+}
+
+/* General publication content text */
+.publication-content {
+    color: #e0d6cc;
+}
+
+body.light-theme .publication-content {
+    color: #2d3142;
+}
+
+/* Action Buttons Container */
+.publication-actions {
+    display: flex;
+    gap: 0.8em;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Enhanced Button Styles */
+.btn-abstract,
+.btn-pdf,
+.btn-bibtex {
+    padding: 0.6em 1.2em;
+    border: none;
+    border-radius: 25px;
+    font-size: 0.85em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-abstract::before,
+.btn-pdf::before,
+.btn-bibtex::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-abstract:hover::before,
+.btn-pdf:hover::before,
+.btn-bibtex:hover::before {
+    left: 100%;
+}
+
+/* Abstract Button */
+.btn-abstract {
+    background: linear-gradient(135deg, #e8f5e8, #d4f1d4);
+    color: #2d5016;
+    border: 1px solid #4CAF50;
+    box-shadow: 0 3px 10px rgba(76, 175, 80, 0.2);
+}
+
+.btn-abstract:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+    color: #1a3009;
+    background: linear-gradient(135deg, #f1f9f1, #e0f7e0);
+}
+
+/* PDF Button */
+.btn-pdf {
+    background: linear-gradient(135deg, #ffe6e6, #ffd6d6);
+    color: #8b0000;
+    border: 1px solid #ff4757;
+    box-shadow: 0 3px 10px rgba(255, 71, 87, 0.2);
+}
+
+.btn-pdf:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 71, 87, 0.3);
+    color: #660000;
+    background: linear-gradient(135deg, #fff0f0, #ffe0e0);
+}
+
+/* BibTeX Button */
+.btn-bibtex {
+    background: linear-gradient(135deg, #e6f7ff, #d6f3ff);
+    color: #003d52;
+    border: 1px solid #378DBD;
+    box-shadow: 0 3px 10px rgba(55, 141, 189, 0.2);
+}
+
+.btn-bibtex:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(55, 141, 189, 0.3);
+    color: #002a3a;
+    background: linear-gradient(135deg, #f0faff, #e6f4ff);
+}
+
+/* Abstract/BibTeX Display Container */
+.abstract-container,
+.bibtex-container {
+    margin-top: 1.5em;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: none;
+    animation: slideDown 0.3s ease;
+}
+
+body.light-theme .abstract-container,
+body.light-theme .bibtex-container {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Container Header */
+.container-header {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1em 1.5em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body.light-theme .container-header {
+    background: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container-title {
+    font-weight: 600;
+    color: #59a7f0;
+    margin: 0;
+}
+
+body.light-theme .container-title {
+    color: #378DBD;
+}
+
+/* Copy Button */
+.copy-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    padding: 0.4em 0.8em;
+    color: #e0d6cc;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+body.light-theme .copy-btn {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: #1f2933;
+}
+
+.copy-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+body.light-theme .copy-btn:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.copy-btn.copied {
+    background: #4CAF50;
+    border-color: #4CAF50;
+    color: white;
+}
+
+/* Content Areas */
+.abstract-content,
+.bibtex-content {
+    padding: 1.5em;
+}
+
+.abstract-text {
+    line-height: 1.6;
+    text-align: justify;
+    color: #e0d6cc;
+    margin: 0;
+}
+
+body.light-theme .abstract-text {
+    color: #1f2933;
+}
+
+.bibtex-code {
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 1.2em;
+    margin: 0;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85em;
+    line-height: 1.4;
+    color: #f8f8f2;
+    border: 1px solid #333;
+}
+
+body.light-theme .bibtex-code {
+    background: #f8f9fa;
+    color: #2d3748;
+    border: 1px solid #e2e8f0;
+}
+
+/* Scrollbar Styling */
+.bibtex-code::-webkit-scrollbar {
+    height: 8px;
+}
+
+.bibtex-code::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.bibtex-code::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.bibtex-code::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Icons for buttons */
+.btn-abstract::after {
+    content: '📄';
+    font-size: 0.9em;
+}
+
+.btn-pdf::after {
+    content: '📁';
+    font-size: 0.9em;
+}
+
+.btn-bibtex::after {
+    content: '📋';
+    font-size: 0.9em;
+}
+
+.copy-btn::after {
+    content: '📋';
+    font-size: 0.8em;
+}
+
+.copy-btn.copied::after {
+    content: '✅';
+}
+
+/* DOI Links */
+.doi-link {
+    color: #ff9f43;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 0.5em;
+}
+
+.doi-link:hover {
+    color: #ff7675;
+    text-decoration: underline;
+}
+
+body.light-theme .doi-link {
+    color: #e17055;
+}
+
+body.light-theme .doi-link:hover {
+    color: #d63031;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 736px) {
+    .publications-section {
+        padding: 1.5em;
+        margin-bottom: 1.5em;
+    }
+    
+    .publication-item {
+        padding: 1.2em;
+        margin-bottom: 1.2em;
+    }
+    
+    .publication-actions {
+        gap: 0.6em;
+    }
+    
+    .btn-abstract,
+    .btn-pdf,
+    .btn-bibtex {
+        padding: 0.5em 1em;
+        font-size: 0.8em;
+    }
+    
+    .container-header {
+        padding: 0.8em 1.2em;
+        flex-direction: column;
+        gap: 0.5em;
+        align-items: flex-start;
+    }
+    
+    .abstract-content,
+    .bibtex-content {
+        padding: 1.2em;
+    }
+    
+    .bibtex-code {
+        font-size: 0.75em;
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .publications-section {
+        padding: 1em;
+    }
+    
+    .publication-item {
+        padding: 1em;
+    }
+    
+    .publication-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .btn-abstract,
+    .btn-pdf,
+    .btn-bibtex {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .publications-section h3 {
+        font-size: 1.2em;
+        padding: 0.4em 0 0.4em 0.8em;
+    }
+}
