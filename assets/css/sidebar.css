@@ -1,0 +1,361 @@
+/* Modern Sidebar Redesign */
+
+/* Enhanced Sidebar Background */
+body.dark-theme #sidebar {
+    background: linear-gradient(180deg, #2a3441 0%, #1f2933 100%) !important;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.light-theme #sidebar {
+    background: linear-gradient(180deg, #f8f9fa 0%, #e0d6cc 100%) !important;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Header Redesign */
+#menu header.major {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 1.5em;
+    margin-bottom: 2em;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+body.light-theme #menu header.major {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#menu header.major h2 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    background: linear-gradient(135deg, #59a7f0, #378DBD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+body.light-theme #menu header.major h2 {
+    background: linear-gradient(135deg, #378DBD, #4f23ad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Social Icons in Header */
+#menu header.major h6 {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 0;
+}
+
+#menu header.major h6 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #59a7f0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1.1em;
+}
+
+#menu header.major h6 a:hover {
+    background: #59a7f0;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(89, 167, 240, 0.4);
+}
+
+body.light-theme #menu header.major h6 a {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: #378DBD;
+}
+
+body.light-theme #menu header.major h6 a:hover {
+    background: #378DBD;
+    color: white;
+}
+
+/* Enhanced Menu Items */
+#menu ul {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    padding: 1.5em;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(5px);
+}
+
+body.light-theme #menu ul {
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#menu ul li {
+    margin: 0.8em 0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+#menu ul li:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateX(5px);
+}
+
+body.light-theme #menu ul li:hover {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+#menu ul li a {
+    display: flex;
+    align-items: center;
+    padding: 0.8em 1em;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#menu ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(180deg, #59a7f0, #378DBD);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+#menu ul li a:hover::before {
+    transform: scaleY(1);
+}
+
+body.light-theme #menu ul li a::before {
+    background: linear-gradient(180deg, #378DBD, #4f23ad);
+}
+
+/* Menu Item Icons */
+#menu ul li a::after {
+    display: none;
+}
+
+/* Remove original borders */
+#menu > ul > li {
+    border-top: none !important;
+    margin: 0.8em 0 !important;
+    padding: 0 !important;
+}
+
+/* Contact Section Redesign */
+#sidebar .inner > section {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 1.5em;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    margin-top: 2em;
+}
+
+body.light-theme #sidebar .inner > section {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#sidebar .inner > section header.major {
+    text-align: center;
+}
+
+#sidebar .inner > section header.major h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    text-align: center;
+    background: linear-gradient(135deg, #59a7f0, #378DBD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+
+body.light-theme #sidebar .inner > section header.major h2 {
+    background: linear-gradient(135deg, #378DBD, #4f23ad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Enhanced Contact Items */
+body.dark-theme ul.contact li {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    border-top: none !important;
+    position: relative;
+    padding-left: 3.5em;
+}
+
+body.light-theme ul.contact li {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-top: none !important;
+    position: relative;
+    padding-left: 3.5em;
+}
+
+ul.contact li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme ul.contact li:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+body.light-theme ul.contact li:hover {
+    background: rgba(0, 0, 0, 0.08);
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Icons */
+body.dark-theme ul.contact li:before,
+body.light-theme ul.contact li:before {
+    background: linear-gradient(135deg, #59a7f0, #378DBD);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1em;
+    left: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 2px 10px rgba(89, 167, 240, 0.3);
+}
+
+body.light-theme ul.contact li:before {
+    background: linear-gradient(135deg, #378DBD, #4f23ad);
+}
+
+/* Remove default section borders and spacing */
+#sidebar > .inner > * {
+    border-bottom: none !important;
+    margin: 0 0 1.5em 0 !important;
+    padding: 0 !important;
+}
+
+#sidebar > .inner > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Sidebar Inner Padding */
+#sidebar > .inner {
+    padding: 2em 1.5em !important;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1280px) {
+    #sidebar > .inner {
+        padding: 1.5em 1.2em !important;
+    }
+    
+    #menu header.major {
+        padding: 1.2em;
+    }
+    
+    #menu ul {
+        padding: 1.2em;
+    }
+    
+    #sidebar .inner > section {
+        padding: 1.2em;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #menu header.major h6 {
+        gap: 0.8em;
+    }
+    
+    #menu header.major h6 a {
+        width: 30px;
+        height: 30px;
+        font-size: 1em;
+    }
+    
+    ul.contact li {
+        padding-left: 3em;
+    }
+    
+    body.dark-theme ul.contact li:before,
+    body.light-theme ul.contact li:before {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9em;
+        left: 0.8em;
+    }
+}
+
+/* Toggle Button Enhancement */
+#sidebar .toggle {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0 15px 15px 0;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+#sidebar .toggle:hover {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+body.light-theme #sidebar .toggle {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+body.light-theme #sidebar .toggle:hover {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+#sidebar .toggle:before {
+    color: #59a7f0;
+    transition: all 0.3s ease;
+}
+
+#sidebar .toggle:hover:before {
+    color: #fcf33a;
+    text-shadow: 0 0 10px rgba(252, 243, 58, 0.6);
+}
+
+body.light-theme #sidebar .toggle:before {
+    color: #378DBD;
+}
+
+body.light-theme #sidebar .toggle:hover:before {
+    color: #4f23ad;
+    text-shadow: 0 0 10px rgba(79, 35, 173, 0.6);
+}
