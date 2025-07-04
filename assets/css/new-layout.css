@@ -1,0 +1,509 @@
+/* Hero Section Styles */
+.hero-banner {
+    padding: 2em 0 1.5em 0;
+    border-top: none !important;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 280px;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 2em;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 100%;
+    gap: 2em;
+}
+
+.profile-image-container {
+    flex-shrink: 0;
+}
+
+.profile-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-info {
+    flex: 1;
+    text-align: left;
+}
+
+.profile-name {
+    font-size: 2em;
+    margin: 0 0 0.3em 0;
+    font-weight: 700;
+    background: linear-gradient(135deg, #59a7f0, #fcf33a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 0.8em;
+    font-size: 0.85em;
+}
+
+.position-title {
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0.3em 0;
+    color: #c0dfe8;
+}
+
+.institution {
+    font-size: 0.9em;
+    margin: 0.3em 0;
+    opacity: 0.9;
+}
+
+.research-areas {
+    font-size: 0.9em;
+    margin: 0.8em 0;
+    font-style: italic;
+    color: #e4c0e8;
+}
+
+.social-links {
+    display: flex;
+    gap: 0.8em;
+    margin-top: 1em;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #59a7f0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.9em;
+}
+
+.social-icon:hover {
+    background: #59a7f0;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(89, 167, 240, 0.4);
+}
+
+/* Navigation Cards Section */
+.nav-cards-section {
+    padding: 2em 0 1.5em 0;
+    border-top: solid 2px rgba(210, 215, 217, 0.2) !important;
+}
+
+.nav-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2em;
+    margin-top: 1em;
+}
+
+.nav-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.2em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.nav-card:hover::before {
+    left: 100%;
+}
+
+.nav-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    margin: 0 auto 0.8em auto;
+    font-size: 1.2em;
+    background: linear-gradient(135deg, #59a7f0, #378DBD);
+    color: white;
+    box-shadow: 0 3px 10px rgba(89, 167, 240, 0.3);
+}
+
+.nav-card h3 {
+    margin: 0 0 0.4em 0;
+    font-size: 1.1em;
+    color: #d7e0cc;
+}
+
+.nav-card p {
+    margin: 0;
+    font-size: 0.8em;
+    opacity: 0.8;
+    line-height: 1.3;
+}
+
+/* Specific card colors */
+.about-card .nav-card-icon { background: linear-gradient(135deg, #c0dfe8, #59a7f0); }
+.research-card .nav-card-icon { background: linear-gradient(135deg, #e8c0c0, #f05c6e); }
+.publications-card .nav-card-icon { background: linear-gradient(135deg, #cde8c0, #4CAF50); }
+.teaching-card .nav-card-icon { background: linear-gradient(135deg, #e4c0e8, #9C27B0); }
+.media-card .nav-card-icon { background: linear-gradient(135deg, #bcddeb, #2196F3); }
+.blogs-card .nav-card-icon { background: linear-gradient(135deg, #e8ebbc, #FF9800); }
+
+/* Content Sections */
+.content-section {
+    padding: 2em 0 1.5em 0;
+    border-top: solid 2px rgba(210, 215, 217, 0.2) !important;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.section-header h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+    position: relative;
+    display: inline-block;
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(135deg, #59a7f0, #378DBD);
+    border-radius: 2px;
+}
+
+.about-content {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.about-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+}
+
+.lab-info {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.5em;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lab-info h3 {
+    margin-bottom: 0.8em;
+    font-size: 1.2em;
+}
+
+.lab-link {
+    font-size: 1em;
+    font-weight: 600;
+    color: #59a7f0;
+    text-decoration: none;
+    padding: 0.4em 0.8em;
+    border-radius: 6px;
+    background: rgba(89, 167, 240, 0.1);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.lab-link:hover {
+    background: rgba(89, 167, 240, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Hiring Section */
+.hiring-section {
+    padding: 2em 0 1.5em 0;
+    border-top: solid 2px rgba(210, 215, 217, 0.2) !important;
+}
+
+.hiring-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, rgba(255, 71, 87, 0.1), rgba(255, 154, 0, 0.1));
+    border-radius: 15px;
+    padding: 2em;
+    border: 2px solid rgba(255, 71, 87, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.hiring-banner::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+    animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.5; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.1); }
+}
+
+.hiring-content {
+    flex: 1;
+}
+
+.hiring-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.8em;
+    color: #ff4757;
+    font-weight: 700;
+}
+
+.hiring-content p {
+    font-size: 1em;
+    margin-bottom: 1.2em;
+    line-height: 1.5;
+}
+
+.hiring-btn-new {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff4757, #ff9f43);
+    color: white;
+    padding: 0.8em 1.6em;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 12px rgba(255, 71, 87, 0.4);
+}
+
+.hiring-btn-new:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 16px rgba(255, 71, 87, 0.6);
+    color: white;
+}
+
+.hiring-icon {
+    font-size: 3em;
+    color: rgba(255, 71, 87, 0.6);
+    margin-left: 1.5em;
+}
+
+/* Light Theme Overrides */
+body.light-theme .profile-card {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .profile-name {
+    background: linear-gradient(135deg, #378DBD, #4f23ad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+body.light-theme .position-title {
+    color: #072a4c;
+}
+
+body.light-theme .research-areas {
+    color: #490e9b;
+}
+
+body.light-theme .nav-card {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .nav-card h3 {
+    color: #1f2933;
+}
+
+body.light-theme .social-icon {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+body.light-theme .social-icon:hover {
+    background: #378DBD;
+}
+
+body.light-theme .lab-info {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .hiring-banner {
+    background: linear-gradient(135deg, rgba(255, 71, 87, 0.05), rgba(255, 154, 0, 0.05));
+    border: 2px solid rgba(255, 71, 87, 0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 980px) {
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5em;
+        padding: 1.5em;
+    }
+    
+    .profile-name {
+        font-size: 1.8em;
+    }
+    
+    .nav-cards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1em;
+    }
+    
+    .hiring-banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5em;
+        padding: 1.5em;
+    }
+    
+    .hiring-icon {
+        margin-left: 0;
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .hero-banner {
+        padding: 1.5em 0;
+    }
+    
+    .profile-card {
+        padding: 1.2em;
+        gap: 1.2em;
+    }
+    
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .profile-name {
+        font-size: 1.6em;
+    }
+    
+    .nav-cards-section {
+        padding: 1.5em 0 1em 0;
+    }
+    
+    .nav-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8em;
+    }
+    
+    .nav-card {
+        padding: 1em;
+    }
+    
+    .content-section {
+        padding: 1.5em 0 1em 0;
+    }
+    
+    .hiring-section {
+        padding: 1.5em 0 1em 0;
+    }
+    
+    .hiring-banner {
+        padding: 1.5em;
+    }
+    
+    .hiring-content h3 {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-card {
+        padding: 1em;
+    }
+    
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .profile-name {
+        font-size: 1.4em;
+    }
+    
+    .social-links {
+        gap: 0.5em;
+    }
+    
+    .social-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8em;
+    }
+    
+    .section-header h2 {
+        font-size: 1.5em;
+    }
+    
+    .nav-cards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-banner {
+        padding: 1em 0;
+    }
+    
+    .nav-cards-section, .content-section, .hiring-section {
+        padding: 1em 0;
+    }
+}

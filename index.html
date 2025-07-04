@@ -7,8 +7,8 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/main-auxiliary.css"/>
 		<link rel="stylesheet" href="assets/css/news.css"/>
+		<link rel="stylesheet" href="assets/css/new-layout.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
 	</head>
 	<body class="is-preload dark-theme">
 		<button id="theme-toggle" aria-label="Toggle Theme">
@@ -21,57 +21,132 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-								<section id="banner">
-									<div class="content">
-										<header>
-											<div id ="image_bio">
-												<img src="images/rahulbhadani.jpg" class="bioimage" alt="" >
-												<h1 style="text-align: center">Rahul Bhadani</h1>
-												<i class="fa fa-envelope-o"> </i><a href="#">&nbsp; rahul.bhadani@uah.edu, rahulbhadani@email.arizona.edu</a><br/>
-												<span class="professor-title">Assistant Professor, Electrical and Computer Engineering, The University of Alabama in Huntsville</span><br/>
-												<span class="research-interests">Connected and Autonomous Vehicles | Mobility | Quantum Information Theory</span>
-												<br/>
-												<!--img src="images/2x/Artboard 1@2x.png" class="logoimg"/>
-												<br/-->
-												<a href="about.html"><span class="icon-person"></span></a>												
-												<a href="research.html"><span class="icon-research"></span></a>												
-												<a href="publications.html"><span class="icon-publication"></span></a>												
-												<a href="teaching.html"><span class="icon-teaching"></span></a>												
-												<a href="media.html"><span class="icon-news"></span></a>												
-												<a href="blogs/"><span class="icon-blogs"></span></a>
-                                                <br/>
-                                    
-                                                <a href="https://www.linkedin.com/in/rahulbhadani/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a>
-                                                <a href="http://github.com/rahulbhadani" class="icon fa-github"><span class="label">Github</span></a>
-                                                <a href="http://csl.arizona.edu/~rahulbhadani" class="icon fa-globe"><span class="label">UofA Page</span></a>
-                                                <a href = "https://www.youtube.com/user/kumarrahulbhadani" class = "icon fa-youtube"><span class="label">YouTube</span></a>
-                                                <a href = "https://rahulbhadani.medium.com/" class = "icon fa-medium"><span class="label">Medium</span></a>
-													
-											</div>											
-										</header>
+							<!-- Hero Section -->
+							<section id="hero-section" class="hero-banner">
+								<div class="hero-content">
+									<div class="profile-card">
+										<div class="profile-image-container">
+											<img src="images/rahulbhadani.jpg" class="profile-image" alt="Rahul Bhadani" >
+										</div>
+										<div class="profile-info">
+											<h1 class="profile-name">Rahul Bhadani</h1>
+											<div class="contact-info">
+												<i class="fa fa-envelope"></i>
+												<span>rahul.bhadani@uah.edu, rahulbhadani@email.arizona.edu</span>
+											</div>
+											<p class="position-title">Assistant Professor, Electrical and Computer Engineering</p>
+											<p class="institution">The University of Alabama in Huntsville</p>
+											<p class="research-areas">Connected and Autonomous Vehicles | Mobility | Quantum Information Theory</p>
+											
+											<div class="social-links">
+												<a href="https://www.linkedin.com/in/rahulbhadani/" class="social-icon" title="LinkedIn">
+													<i class="fab fa-linkedin"></i>
+												</a>
+												<a href="http://github.com/rahulbhadani" class="social-icon" title="GitHub">
+													<i class="fab fa-github"></i>
+												</a>
+												<a href="http://csl.arizona.edu/~rahulbhadani" class="social-icon" title="University Page">
+													<i class="fas fa-globe"></i>
+												</a>
+												<a href="https://www.youtube.com/user/kumarrahulbhadani" class="social-icon" title="YouTube">
+													<i class="fab fa-youtube"></i>
+												</a>
+												<a href="https://rahulbhadani.medium.com/" class="social-icon" title="Medium">
+													<i class="fab fa-medium"></i>
+												</a>
+											</div>
+										</div>
 									</div>
-								</section>	
-								<div class="content">	
-									<p style="text-align: justify">I obtained my PhD in May 2022 from the University of Arizona in Electrical and Computer Engineering. 
-										My research interests are at the intersection of cyber-physical systems, intelligent transportation, smart cities, and novel machine learning algorithms including quantum machine learning and quantum communication. My research is dedicated to enhancing the safety, resilience, security, and reliability of the nation's infrastructure and community. To accomplish my goals, I am exploring the synergy of computation, control, and communication.
-									</p>
-
-									Lab Website: 
-									<a href="https://aarc-lab.github.io/"><span class="hiring-link">https://aarc-lab.github.io/</span></a>
-									</p>
 								</div>
+							</section>
 
-								<section>
-								<button id="hiring-button" class="hiring-btn">We're hiring</button>
-								<div>
-									<p>
-										I am looking for self-motivated PhD candidates and interns who share similar research interests with me! Please <a href="hiring.html" class="hiring-link">click here</a> for more information.
-									</p>
+							<!-- Navigation Cards -->
+							<section id="navigation-section" class="nav-cards-section">
+								<div class="nav-cards-grid">
+									<a href="about.html" class="nav-card about-card">
+										<div class="nav-card-icon">
+											<i class="fas fa-user"></i>
+										</div>
+										<h3>About</h3>
+										<p>Learn more about my background and journey</p>
+									</a>
+									
+									<a href="research.html" class="nav-card research-card">
+										<div class="nav-card-icon">
+											<i class="fas fa-microscope"></i>
+										</div>
+										<h3>Research</h3>
+										<p>Explore my research interests and projects</p>
+									</a>
+									
+									<a href="publications.html" class="nav-card publications-card">
+										<div class="nav-card-icon">
+											<i class="fas fa-file-alt"></i>
+										</div>
+										<h3>Publications</h3>
+										<p>Browse my academic publications and papers</p>
+									</a>
+									
+									<a href="teaching.html" class="nav-card teaching-card">
+										<div class="nav-card-icon">
+											<i class="fas fa-chalkboard-teacher"></i>
+										</div>
+										<h3>Teaching</h3>
+										<p>View my courses and teaching philosophy</p>
+									</a>
+									
+									<a href="media.html" class="nav-card media-card">
+										<div class="nav-card-icon">
+											<i class="fas fa-newspaper"></i>
+										</div>
+										<h3>News</h3>
+										<p>Latest news and media coverage</p>
+									</a>
+									
+									<a href="blogs/" class="nav-card blogs-card">
+										<div class="nav-card-icon">
+											<i class="fas fa-blog"></i>
+										</div>
+										<h3>Blogs</h3>
+										<p>Read my thoughts and insights</p>
+									</a>
 								</div>
+							</section>
 
-								<header class="major">
+							<!-- About Section -->
+							<section id="about-preview" class="content-section">
+								<div class="section-header">
+									<h2>About Me</h2>
+								</div>
+								<div class="about-content">
+									<p>I obtained my PhD in May 2022 from the University of Arizona in Electrical and Computer Engineering. My research interests are at the intersection of cyber-physical systems, intelligent transportation, smart cities, and novel machine learning algorithms including quantum machine learning and quantum communication. My research is dedicated to enhancing the safety, resilience, security, and reliability of the nation's infrastructure and community. To accomplish my goals, I am exploring the synergy of computation, control, and communication.</p>
+									
+									<div class="lab-info">
+										<h3>Lab Website</h3>
+										<a href="https://aarc-lab.github.io/" class="lab-link">https://aarc-lab.github.io/</a>
+									</div>
+								</div>
+							</section>
+
+							<!-- Hiring Section -->
+							<section id="hiring-section" class="hiring-section">
+								<div class="hiring-banner">
+									<div class="hiring-content">
+										<h3>We're Hiring!</h3>
+										<p>I am looking for self-motivated PhD candidates and interns who share similar research interests with me!</p>
+										<a href="hiring.html" class="hiring-btn-new">Learn More</a>
+									</div>
+									<div class="hiring-icon">
+										<i class="fas fa-users"></i>
+									</div>
+								</div>
+							</section>
+
+							<!-- News Section -->
+							<section id="news-section" class="content-section">
+								<div class="section-header">
 									<h2>Recent News</h2>
-								</header>
+								</div>
 								<div class="news-timeline">
 									<div class="news-item">
 										<div class="news-date">2025/07/01</div>
@@ -191,11 +266,6 @@
             document.querySelector('.fa-moon').style.display = 'inline';
         }
     });
-			</script>
-			<script>
-				document.getElementById("hiring-button").onclick = function () {
-        location.href = "hiring.html";
-    };
 			</script>
 	</body>
 </html>
