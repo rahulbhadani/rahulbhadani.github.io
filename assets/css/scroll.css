@@ -1,0 +1,119 @@
+/* Scroll to Top Card */
+.scroll-to-top-card {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.4s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Dark theme styling */
+body.dark-theme .scroll-to-top-card {
+    background: rgba(255, 189, 142, 0.8); /* Peachfuzz with transparency */
+    border: 1px solid rgba(255, 189, 142, 0.6);
+}
+
+body.dark-theme .scroll-to-top-card:hover {
+    background: rgba(255, 189, 142, 0.9);
+    border-color: rgba(255, 189, 142, 0.8);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(255, 189, 142, 0.3);
+}
+
+/* Light theme styling */
+body.light-theme .scroll-to-top-card {
+    background: rgba(255, 189, 142, 0.7); /* Peachfuzz with transparency */
+    border: 1px solid rgba(255, 189, 142, 0.5);
+}
+
+body.light-theme .scroll-to-top-card:hover {
+    background: rgba(255, 189, 142, 0.85);
+    border-color: rgba(255, 189, 142, 0.7);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(255, 189, 142, 0.4);
+}
+
+/* Arrow styling */
+.scroll-arrow {
+    font-size: 24px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+/* Dark theme arrow */
+body.dark-theme .scroll-arrow {
+    color: rgba(139, 69, 19, 0.8); /* Dark brown for contrast against peachfuzz */
+}
+
+body.dark-theme .scroll-to-top-card:hover .scroll-arrow {
+    color: rgba(139, 69, 19, 1);
+    transform: translateY(-2px);
+}
+
+/* Light theme arrow */
+body.light-theme .scroll-arrow {
+    color: rgba(139, 69, 19, 0.8); /* Dark brown for contrast against peachfuzz */
+}
+
+body.light-theme .scroll-to-top-card:hover .scroll-arrow {
+    color: rgba(139, 69, 19, 1);
+    transform: translateY(-2px);
+}
+
+/* Visible state */
+.scroll-to-top-card.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Active/pressed state */
+.scroll-to-top-card:active {
+    transform: translateY(0) scale(0.95);
+}
+
+.scroll-to-top-card:active .scroll-arrow {
+    transform: translateY(0) scale(0.9);
+}
+
+/* Responsive design */
+@media screen and (max-width: 736px) {
+    .scroll-to-top-card {
+        bottom: 25px;
+        right: 25px;
+        width: 55px;
+        height: 55px;
+        border-radius: 12px;
+    }
+    
+    .scroll-arrow {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .scroll-to-top-card {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+    
+    .scroll-arrow {
+        font-size: 20px;
+    }
+}

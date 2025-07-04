@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/jssor.css" />
     <link rel="stylesheet" href="assets/css/sidebar.css"/>
     <link rel="stylesheet" href="assets/css/publications.css"/>
+    <link rel="stylesheet" href="assets/css/scroll.css"/>
     <script src="assets/js/expand.js"></script>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -1596,6 +1597,8 @@ publisher={Elsevier}
         </div>
     </div>
 
+    
+
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -1654,5 +1657,32 @@ publisher={Elsevier}
             });
         }
     </script>
+    <!-- Scroll to Top Button -->
+<div id="scroll-to-top" class="scroll-to-top-card" aria-label="Scroll to top">
+    <div class="scroll-arrow">↑</div>
+</div>
+
+<!-- Scroll to Top Script -->
+<script>
+    // Scroll to top functionality
+    const scrollToTopCard = document.getElementById('scroll-to-top');
+    
+    // Show/hide button based on scroll position
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            scrollToTopCard.classList.add('visible');
+        } else {
+            scrollToTopCard.classList.remove('visible');
+        }
+    });
+    
+    // Smooth scroll to top when clicked
+    scrollToTopCard.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
 </body>
 </html>
